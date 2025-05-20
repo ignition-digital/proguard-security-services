@@ -4,15 +4,36 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 // Define your 'roots' variable
-const ROOTS_URL = "https://www.pyrotechnicsfireworks.com";
+const ROOTS_URL = "";
 
 // Define the pages for HtmlWebpackPlugin
 const pages = [
   { name: "index", template: "./src/index.html" },
-  { name: "about-us", template: "./src/about-us.html" },
+  { name: "license", template: "./src/license.html" },
+  { name: "structure", template: "./src/structure.html" },
+  { name: "vision", template: "./src/vision.html" },
+  { name: "overview", template: "./src/overview.html" },
   { name: "contact-us", template: "./src/contact-us.html" },
-  { name: "product", template: "./src/product.html" },
-  { name: "our-fireworks", template: "./src/our-fireworks.html" },
+  { name: "join-us", template: "./src/join-us.html" },
+  { name: "clients", template: "./src/clients.html" },
+  { name: "static-guard-service", template: "./src/static-guard-service.html" },
+  { name: "armed-guard-service", template: "./src/armed-guard-service.html" },
+  {
+    name: "vip-bodyguard-service",
+    template: "./src/vip-bodyguard-service.html",
+  },
+  {
+    name: "event-control-service",
+    template: "./src/event-control-service.html",
+  },
+  {
+    name: "security-escort-service",
+    template: "./src/security-escort-service.html",
+  },
+  {
+    name: "vehicle-patrol-service",
+    template: "./src/vehicle-patrol-service.html",
+  },
   { name: "404", template: "./src/404.html" },
 ];
 
@@ -67,15 +88,8 @@ module.exports = {
       patterns: [
         { from: "wp-includes", to: "wp-includes" },
         { from: "wp-content", to: "wp-content" },
-        { from: "i18n", to: "i18n" },
-        { from: "data", to: "data" },
         { from: "src/manifest.json", to: "manifest.json" },
         { from: "src/service-worker.js", to: "service-worker.js" },
-        {
-          from: path.resolve(__dirname, "CNAME"),
-          to: path.resolve(__dirname, "dist"),
-          noErrorOnMissing: true,
-        },
       ],
     }),
   ],

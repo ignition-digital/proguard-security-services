@@ -4,6 +4,23 @@
   <head>
     <title>Proguard Security Services</title>
     <%= htmlWebpackPlugin.options.templateParameters.commonHead %>
+    <style>
+      .box-container {
+        display: flex;
+        align-items: center; /* Vertically center */
+        gap: 10px; /* Optional: space between image and text */
+      }
+
+      .box-icon img {
+        display: block;
+        max-width: 100%; /* Optional responsiveness */
+        height: auto;
+      }
+
+      .box-body {
+        margin: 0; /* Remove default paragraph margin */
+      }
+    </style>
   </head>
 
   <body
@@ -461,7 +478,7 @@
                     style="color: ;}"
                   >
                     <div
-                      class="wpb_column vc_column_container vc_col-sm-6"
+                      class="wpb_column vc_column_container vc_col-sm-12"
                       data-equalizer-watch=""
                     >
                       <div class="vc_column-inner">
@@ -469,59 +486,16 @@
                           <div
                             class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_left-to-right left-to-right"
                           >
-                            <div class="wpb_wrapper">
+                            <div class="wpb_wrapper" style="text-align: center">
                               <h4 class="animated" data-animated="fadeInRight">
                                 More information about us
                               </h4>
                               <p class="animated" data-animated="fadeInRight">
-                                Proguard Security is the ultime security company
-                                is also the leader of the market with more than
-                                600 collaborateurs à travers the country.<br />
-                                <a href="#">Who we are</a>
+                                Proguard Security is the ultimate security
+                                company, and the market leader collaborates with
+                                both government and private sector clients.<br />
+                                <a href="/overview.html">Who we are</a>
                               </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="wpb_column vc_column_container vc_col-sm-6"
-                      data-equalizer-watch=""
-                    >
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="wpb_text_column wpb_content_element">
-                            <div class="wpb_wrapper">
-                              <div
-                                class="rounded-item animated"
-                                data-animated="fadeInRight"
-                              >
-                                <div class="rounded-text">Our team</div>
-                                <div class="rounded-number">
-                                  <h3>125</h3>
-                                  <div>Pay</div>
-                                </div>
-                              </div>
-                              <div
-                                class="rounded-item animated"
-                                data-animated="fadeInRight"
-                              >
-                                <div class="rounded-text">Our Operations</div>
-                                <div class="rounded-number">
-                                  <h3>616K</h3>
-                                  <div>Employes</div>
-                                </div>
-                              </div>
-                              <div
-                                class="rounded-item animated"
-                                data-animated="fadeInRight"
-                              >
-                                <div class="rounded-text">Our customers</div>
-                                <div class="rounded-number">
-                                  <h3>100+</h3>
-                                  <div>ans</div>
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -587,21 +561,7 @@
                                   data-animated="fadeInRight"
                                 >
                                   <div class="box-container clearfix">
-                                    <div class="box-icon">
-                                      <img
-                                        decoding="async"
-                                        src="wp-content/uploads/2015/09/support.png"
-                                        alt="icon"
-                                      />
-                                    </div>
-                                    <h3 class="box-title-1">
-                                      Access control, CCTV, intruder alarms
-                                    </h3>
-                                    <p class="box-body">
-                                      Morbi leo risus, porta ac consectetur ac
-                                      feanumi vestibulum at eros. Fusce dapibus,
-                                      tellus ac cursus commodo, tortor mauris.
-                                    </p>
+                                    <h3 class="box-title-1">MPGS ACADEMY</h3>
                                   </div>
                                 </div>
 
@@ -613,21 +573,18 @@
                                     <div class="box-icon">
                                       <img
                                         decoding="async"
-                                        src="wp-content/uploads/2015/09/access.png"
+                                        src="wp-content/uploads/images/handgun.png"
                                         alt="icon"
                                       />
                                     </div>
-                                    <h3 class="box-title-1">
-                                      Risk management consultancy services
-                                    </h3>
                                     <p class="box-body">
-                                      Morbi leo risus, porta ac consectetur ac
-                                      feanumi vestibulum at eros. Fusce dapibus,
-                                      tellus ac cursus commodo, tortor mauris.
+                                      Basic & Advance Hand Gun and Pumpgun
+                                      Handling Course
                                     </p>
                                   </div>
                                 </div>
 
+                                <br />
                                 <div
                                   class="boxes small layout-1 animated clearfix"
                                   data-animated="fadeInLeft"
@@ -636,21 +593,16 @@
                                     <div class="box-icon">
                                       <img
                                         decoding="async"
-                                        src="wp-content/uploads/2015/09/cam.png"
+                                        src="wp-content/uploads/images/bodyguard.png"
                                         alt="icon"
                                       />
                                     </div>
-                                    <h3 class="box-title-1">
-                                      Electronic monitoring
-                                    </h3>
                                     <p class="box-body">
-                                      Morbi leo risus, porta ac consectetur ac
-                                      feanumi vestibulum at eros. Fusce dapibus,
-                                      tellus ac cursus commodo, tortor mauris.
+                                      Bodyguarding Training Course
                                     </p>
                                   </div>
                                 </div>
-
+                                <br />
                                 <div
                                   class="boxes small layout-1 animated clearfix"
                                   data-animated="fadeInLeft"
@@ -659,18 +611,45 @@
                                     <div class="box-icon">
                                       <img
                                         decoding="async"
-                                        src="wp-content/uploads/2015/09/event.png"
+                                        src="wp-content/uploads/images/k9.png"
                                         alt="icon"
                                       />
                                     </div>
-                                    <h3 class="box-title-1">
-                                      Managing ATMs on behalf of banks
-                                    </h3>
+                                    <p class="box-body">K9 Handeler Course</p>
+                                  </div>
+                                </div>
+                                <br />
+                                <div
+                                  class="boxes small layout-1 animated clearfix"
+                                  data-animated="fadeInLeft"
+                                >
+                                  <div class="box-container clearfix">
+                                    <div class="box-icon">
+                                      <img
+                                        decoding="async"
+                                        src="wp-content/uploads/images/martial.png"
+                                        alt="icon"
+                                      />
+                                    </div>
                                     <p class="box-body">
-                                      Morbi leo risus, porta ac consectetur ac
-                                      feanumi vestibulum at eros. Fusce dapibus,
-                                      tellus ac cursus commodo, tortor mauris.
+                                      Martial Art / Self Defence
                                     </p>
+                                  </div>
+                                </div>
+                                <br />
+                                <div
+                                  class="boxes small layout-1 animated clearfix"
+                                  data-animated="fadeInLeft"
+                                >
+                                  <div class="box-container clearfix">
+                                    <div class="box-icon">
+                                      <img
+                                        decoding="async"
+                                        src="wp-content/uploads/images/airborne.png"
+                                        alt="icon"
+                                      />
+                                    </div>
+                                    <p class="box-body">Air Borne Training</p>
                                   </div>
                                 </div>
                               </div>
